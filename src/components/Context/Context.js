@@ -1,6 +1,6 @@
-import React, {createContext} from "react";
+import React, {createContext, useState} from "react";
 
-const myContext = createContext()
+export const myContext = createContext()
 
 
 
@@ -10,6 +10,11 @@ const myContext = createContext()
 
 
 export const AppContext = ({children}) => {
+
+    const [meals, setMeals] = useState([])
+    const [categories, setCategories] = useState([])
+    const [randomMeal, setRandomMeal] = useState([])
+    
     return <myContext.Provider>
         {children}
     </myContext.Provider>
