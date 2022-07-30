@@ -12,12 +12,13 @@ export const AppContext = ({children}) => {
 
     const fetchMeals = useCallback((searchMeal) => {
         axios.get(`https://www.themealdb.com/api/json/v1/1/search.php?s=${searchMeal}`)
-        .then((r) =>{
-            console.log(r.data)
+        .then((response) =>{
+            // console.log(r.data.meals)
+            setMeals(response.data.meals)
         })
     },[])
 
-    return <myContext.Provider value={{fetchMeals}}>
+    return <myContext.Provider value={{fetchMeals, meals}}>
         {children}
     </myContext.Provider>
 }
