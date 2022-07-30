@@ -15,4 +15,25 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
+    input{
+        padding: .625rem;
+        outline: none;
+        border: .125rem solid #ccc;
+        width: 18.75rem;
+        font-size: 1rem;
+        border-radius: .5625rem;
+        margin: 1.25rem 0rem;
+    }
+
+    button{
+        font-size: 1.125rem;
+        border: .125rem solid #ccc;
+        padding: .3125rem;
+        color: #fff;
+        background: #f3b542;
+        margin-left: .625rem;
+        border-radius: .3125rem;
+        outline: none;
+    }
 }
