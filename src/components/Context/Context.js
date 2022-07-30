@@ -18,6 +18,15 @@ export const AppContext = ({children}) => {
         })
     },[])
 
+    const displayByCategory = useCallback(() =>{
+        axios
+        .get(`www.themealdb.com/api/json/v1/1/categories.php`)
+        .then((response) =>{
+            console.log(response.data.meals)
+
+        })
+    }, []);
+
     return <myContext.Provider value={{fetchMeals, meals}}>
         {children}
     </myContext.Provider>

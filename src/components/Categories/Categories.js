@@ -1,5 +1,6 @@
-import React from 'react'
+import React, {useEffect, useContext} from 'react'
 import './Categories.scss'
+import { myContext } from '../Context/Context'
 
 const Categories = () => {
   return (
