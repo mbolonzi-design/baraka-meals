@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import './Home.scss'
+import { myContext } from '../Context/Context'
 
 const Home = () => {
     const [searchMeal, setSearchMeal] = useState("")
@@ -19,7 +20,6 @@ const Home = () => {
         <div className='search-result'>
             
         </div>
-        <p>Welcome to baraka warm meals</p>
     </div>
   )
 }
