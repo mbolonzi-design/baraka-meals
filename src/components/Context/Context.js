@@ -23,11 +23,21 @@ export const AppContext = ({children}) => {
         .get(`www.themealdb.com/api/json/v1/1/categories.php`)
         .then((response) =>{
             console.log(response.data.meals)
-
+            setCategories(response.data.meals);
         })
     }, []);
 
-    return <myContext.Provider value={{fetchMeals, meals}}>
-        {children}
-    </myContext.Provider>
+    return (
+        <myContext.Provider 
+            value={{
+                    fetchMeals, 
+                    meals,
+                    displayByCategory,
+                    categories
+                }}
+             >
+                {children}
+        </myContext.Provider>
+    )
+    
 }
