@@ -14,6 +14,8 @@ export const AppContext = ({children}) => {
     const [meals, setMeals] = useState([])
     const [categories, setCategories] = useState([])
     const [randomMeal, setRandomMeal] = useState([])
+
+    
     
     return <myContext.Provider>
         {children}

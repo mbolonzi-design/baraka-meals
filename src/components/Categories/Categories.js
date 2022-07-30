@@ -1,8 +1,14 @@
 import React from 'react'
+import './Categories.scss'
 
 const Categories = () => {
   return (
-    <div>Categories</div>
+    <div className='category'>
+      <div>
+        <input type="text" placeholder='enter meal categoty'/>
+        <button>Search by category</button>
+      </div>
+    </div>
   )
 }
 

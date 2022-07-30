@@ -12,9 +12,9 @@ function App() {
       <Router>
         <NavBar />
         <Routes>
-          <Route exact path="/ " component={Home} />
-          <Route exact path="/ categories" component={Categories} />
-          <Route exact path="/random" component={RandomMeal} />
+          <Route exact path="/" element={<Home />} />
+          <Route exact path="/categories" element={<Categories />} />
+          <Route exact path="/random" element={<RandomMeal />} />
         </Routes>
         <Footer />
       </Router>
