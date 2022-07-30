@@ -36,4 +36,24 @@
         border-radius: .3125rem;
         outline: none;
     }
+
+    img{
+        width: 18.75rem;
+        margin: .625rem;
+        border: .125rem solid #ccc;
+        border-radius: .375rem;
+        transition: all .5s ease;
+    }
+
+    .search-result{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        .meal-result{
+            text-align: center;
+        }
+    }
 }
