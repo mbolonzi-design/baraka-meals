@@ -23,6 +23,10 @@ const Home = () => {
              />
             <button onClick={mealsHandler}>Search Meal</button>
         </div>
+        <div className='greetings'>
+          <h2>Welcome to Baraka Meals</h2>
+          <p>Home of finger-licking cuisine</p>
+        </div>
         <div className='search-result'>
             {meals ? (
               meals.map((meal) => (
