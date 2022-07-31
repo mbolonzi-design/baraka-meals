@@ -10,8 +10,6 @@ const Home = () => {
     const mealsHandler = useCallback(() => {
       fetchMeals(searchMeal);
     },[searchMeal, fetchMeals]);
-
-    // console.log(searchMeal)
   return (
     <div className='home'>
         <div className='search-meal'>
@@ -25,7 +23,7 @@ const Home = () => {
         </div>
         <div className='greetings'>
           <h2>Welcome to Baraka Meals</h2>
-          <p>Home of finger-licking cuisine</p>
+          <p>Home of finger-licking cuisines</p>
         </div>
         <div className='search-result'>
             {meals ? (
