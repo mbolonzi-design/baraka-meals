@@ -18,12 +18,11 @@ export const AppContext = ({children}) => {
         })
     },[])
 
-    const displayByCategory = useCallback(() =>{
-        axios
-        .get(`www.themealdb.com/api/json/v1/1/categories.php`)
+    const fetchCategories = useCallback(() =>{
+        axios.get(`https://www.themealdb.com/api/json/v1/1/categories.php`)
         .then((response) =>{
-            console.log(response.data.meals)
-            setCategories(response.data.meals);
+            console.log(response.data.categories)
+            setCategories(response.data.categories);
         })
     }, []);
 
@@ -32,7 +31,7 @@ export const AppContext = ({children}) => {
             value={{
                     fetchMeals, 
                     meals,
-                    displayByCategory,
+                    fetchCategories,
                     categories
                 }}
              >
