@@ -10,9 +10,20 @@
     height: 80vh;
     cursor: pointer;
 
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     img{
         width: 10.625rem;
         margin: .3125rem;
         transition: all .3s ease-in;
+    }
+
+    &:hover{
+        transform: scale(1.1);
     }
 }
