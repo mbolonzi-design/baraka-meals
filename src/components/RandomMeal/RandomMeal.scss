@@ -18,4 +18,35 @@
             transform: scale(1.1);
         }
     }
+
+    .random-meals{
+        .meal-grid{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 1.125rem;
+
+            button{
+                font-size: 1rem;
+                color: #fff;
+                background: #000;
+                margin-top: .9375rem;
+                padding: .625rem;
+                border: .125rem solid #ccc;
+                border-radius: .5rem;
+                outline: none;
+                cursor: pointer;
+            }
+        }
+
+        .meal-instructions{
+            text-align: center;
+            padding: .625rem;
+
+            p{
+                font-size: 1rem;
+            }
+        }
+    }
 }

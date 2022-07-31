@@ -18,7 +18,7 @@ const RandomMeal = () =>{
           </div>
           <div className='meal-instructions'>
             <h3>Instructions</h3>
-            <p>{meal.Instructions}</p>
+            <p>{meal.strInstructions}</p>
           </div>
         </div>
       ))}
