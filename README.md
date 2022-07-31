@@ -22,8 +22,8 @@
 ## Technologies Used
 * React
 * JavaScript
-* TheMealDBAPI
-* Sass,SCSS
+* The Mealdb API
+* Sass
 
 ## Reference
 * StackOverflow
